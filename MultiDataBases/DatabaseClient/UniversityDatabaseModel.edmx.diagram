@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd3997d10dc746aea28a1e9832fb10bb" Name="Diagram1">
+        <EntityTypeShape EntityType="UniversityDBModel.EducationalOrganization" Width="1.5" PointX="7.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Faculty" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Learner" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Object" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Organization" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Person" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Student" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Class" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="UniversityDBModel.FK_EducationalOrganizations_Faculties" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_Organizations_EducationalOrganizations" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_Learners_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_Persons_Learners" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_Objects_Persons" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_Organizations_Objects" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
