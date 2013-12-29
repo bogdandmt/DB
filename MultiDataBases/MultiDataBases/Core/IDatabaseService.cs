@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
+using MultiDatabases.UniversityModel;
 
 
 namespace MultiDataBases.Core
@@ -8,6 +9,21 @@ namespace MultiDataBases.Core
     public interface IDatabaseService
     {
         [OperationContract]
-        IEnumerable<Faculty> GetObjects();
+        ICollection<Faculty> GetFaculties();
+
+        [OperationContract]
+        ICollection<Person> GetPersons();
+
+        [OperationContract]
+        ICollection<EducationalOrganization> GetEducationalOrganization();
+
+        [OperationContract]
+        ICollection<Learner> GetLearner();
+
+        [OperationContract]
+        ICollection<Organization> GetOrganization();
+
+        [OperationContract]
+        ICollection<Student> GetStudent();
     }
 }

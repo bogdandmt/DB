@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "MultiDataBases\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "DatabaseClient\Client.csproj", "{D18AB4F6-486B-496B-A287-ECEE0D8F8220}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDatabases.UniversityModel", "MultiDatabases.UniversityModel\MultiDatabases.UniversityModel.csproj", "{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D18AB4F6-486B-496B-A287-ECEE0D8F8220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18AB4F6-486B-496B-A287-ECEE0D8F8220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18AB4F6-486B-496B-A287-ECEE0D8F8220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

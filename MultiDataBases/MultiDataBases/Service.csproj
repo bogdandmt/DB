@@ -51,75 +51,81 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Core\DatabaseService.cs" />
     <Compile Include="Core\IDatabaseService.cs" />
     <Compile Include="EducationalOrganization.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Faculty.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Learner.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSUniversityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSUniversityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSUniversityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSUniversityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSUniversityModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Object.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Organization.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Person.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UniversityDatabaseModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UniversityDatabaseModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UniversityDatabaseModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UniversityDatabaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UniversityDatabaseModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UniversityDatabaseModel.edmx</DependentUpon>
+      <DependentUpon>MSUniversityModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="UniversityDatabaseModel.edmx">
+    <EntityDeploy Include="MSUniversityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>UniversityDatabaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>MSUniversityModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="MSUniversityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MSUniversityModel.edmx</DependentUpon>
+      <LastGenOutput>MSUniversityModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="MSUniversityModel.edmx.diagram">
+      <DependentUpon>MSUniversityModel.edmx</DependentUpon>
+    </None>
+    <None Include="MSUniversityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MSUniversityModel.edmx</DependentUpon>
+      <LastGenOutput>MSUniversityModel.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
-    <None Include="UniversityDatabaseModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UniversityDatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>UniversityDatabaseModel.Context.cs</LastGenOutput>
-    </None>
-    <None Include="UniversityDatabaseModel.edmx.diagram">
-      <DependentUpon>UniversityDatabaseModel.edmx</DependentUpon>
-    </None>
-    <None Include="UniversityDatabaseModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UniversityDatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>UniversityDatabaseModel.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiDatabases.UniversityModel\MultiDatabases.UniversityModel.csproj">
+      <Project>{1FF5C5F6-00F0-4DCD-9F57-099AFF03FB17}</Project>
+      <Name>MultiDatabases.UniversityModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

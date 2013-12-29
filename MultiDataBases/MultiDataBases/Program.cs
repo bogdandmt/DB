@@ -38,7 +38,7 @@ namespace MultiDataBases
         {
             _serviceHost = new ServiceHost(typeof(DatabaseService), new[]
                 {
-                    new Uri("http://localhost:8080/MultiDatabase")
+                    new Uri("http://localhost:8000/MultiDatabaseService")
                 });
             _serviceHost.AddServiceEndpoint(typeof(IDatabaseService), new BasicHttpBinding(), "");
             _serviceHost.Description.Behaviors.Add(new ServiceMetadataBehavior { HttpGetEnabled = true });

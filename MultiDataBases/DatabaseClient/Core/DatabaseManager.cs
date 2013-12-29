@@ -19,7 +19,7 @@ namespace DatabaseClient.Core
 
         private void SomeMethod()
         {
-            var list = m_client.GetObjects();
+            var list = m_client.GetFaculties();
         }
     }
 }
